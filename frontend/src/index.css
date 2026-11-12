@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Custom Glassmorphism & Micro-animations */
+.glass-panel {
+  background: rgba(15, 30, 61, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-hover:hover {
+  transform: translateY(-2px);
+  border-color: rgba(37, 99, 235, 0.4);
+  box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.15);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #060B19;
+}
+::-webkit-scrollbar-thumb {
+  background: #172A54;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2563EB;
+}
+
+/* GenAI Copilot Fixed Layout */
+.copilot-container {
+  position: fixed;
+  left: max(24px, calc(env(safe-area-inset-left, 0px) + 24px));
+  bottom: max(24px, calc(env(safe-area-inset-bottom, 0px) + 24px));
+  z-index: 1000;
+}
+
+@media (max-width: 639px) {
+  .copilot-container {
+    left: max(14px, calc(env(safe-area-inset-left, 0px) + 14px));
+    bottom: max(14px, calc(env(safe-area-inset-bottom, 0px) + 14px));
+  }
+}

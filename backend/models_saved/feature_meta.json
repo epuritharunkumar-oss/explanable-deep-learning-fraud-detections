@@ -1,0 +1,24 @@
+{
+  "feature_names": [
+    "amount",
+    "distance_from_usual_location",
+    "transactions_last_hour",
+    "transactions_last_24_hours",
+    "failed_login_attempts",
+    "account_age",
+    "is_new_device",
+    "foreign_transaction",
+    "vpn_detected",
+    "proxy_detected",
+    "otp_verified",
+    "two_factor_auth",
+    "previous_fraud_cases",
+    "is_high_risk_merchant",
+    "is_upi",
+    "is_credit_card",
+    "is_wire_transfer"
+  ],
+  "num_features": 17,
+  "dataset_size": 5000,
+  "trained_at": "2026-10-04T09:45:39.802984Z"
+}

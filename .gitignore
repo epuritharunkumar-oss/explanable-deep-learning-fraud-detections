@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.db
+*.sqlite3
+*.egg-info/
+dist/
+build/
+.env
+venv/
+env/
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# ML Models (large binary files)
+backend/models_saved/*.keras
+backend/models_saved/*.h5
+backend/models_saved/*.pkl

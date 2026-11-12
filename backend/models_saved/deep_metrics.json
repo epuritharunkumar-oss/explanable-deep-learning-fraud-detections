@@ -1,0 +1,142 @@
+{
+  "status": "Model trained successfully",
+  "dataset_name": "fraud_training_dataset_100.csv",
+  "model_name": "Multi-Modal Tabular Deep Neural Network",
+  "model_version": "DeepNet-v2.1",
+  "trained_at": "2026-11-11 15:38:29 UTC",
+  "architecture": "Input(D) -> Dense(64, LeakyReLU) -> Dense(32, LeakyReLU) -> Dense(16, LeakyReLU) -> Dense(1, Sigmoid)",
+  "optimizer": "Adam (lr=0.003, beta1=0.9, beta2=0.999)",
+  "loss_function": "Class-Weighted Binary Cross-Entropy",
+  "total_records": 100,
+  "training_records": 80,
+  "testing_records": 20,
+  "target_column": "is_fraud",
+  "features_used": [
+    "amount",
+    "is_new_device",
+    "location_distance",
+    "transactions_last_hour",
+    "failed_login_attempts",
+    "account_age",
+    "foreign_transaction",
+    "transaction_type",
+    "merchant_category",
+    "device_type"
+  ],
+  "feature_count": 10,
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "roc_auc": 1.0
+  },
+  "confusion_matrix": {
+    "true_positives": 5,
+    "true_negatives": 15,
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "roc_curve": [
+    {
+      "fpr": 0.0,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 1.0
+    }
+  ],
+  "history": {
+    "train_loss": [
+      0.6512,
+      0.4902,
+      0.3663,
+      0.2736,
+      0.205,
+      0.152,
+      0.1126,
+      0.0815,
+      0.0594,
+      0.0455,
+      0.0371,
+      0.031,
+      0.0259,
+      0.0215,
+      0.0175,
+      0.0138,
+      0.0109,
+      0.0087,
+      0.007,
+      0.0056,
+      0.0046,
+      0.0038,
+      0.0032,
+      0.0027,
+      0.0024
+    ],
+    "val_loss": [
+      0.6489,
+      0.4776,
+      0.3558,
+      0.2721,
+      0.2067,
+      0.155,
+      0.1149,
+      0.0843,
+      0.0619,
+      0.0471,
+      0.0372,
+      0.0298,
+      0.0239,
+      0.0191,
+      0.0151,
+      0.0119,
+      0.0094,
+      0.0076,
+      0.0062,
+      0.0051,
+      0.0043,
+      0.0037,
+      0.0032,
+      0.0028,
+      0.0024
+    ]
+  }
+}

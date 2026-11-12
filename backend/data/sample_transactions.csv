@@ -1,0 +1,7 @@
+transaction_id,customer_id,amount,transaction_type,merchant_category,device_type,is_new_device,location_distance,transactions_last_hour,failed_login_attempts,account_age,foreign_transaction
+TXN1001,CUST8810,2500,UPI,Groceries,Mobile,No,3,1,0,36,No
+TXN1002,CUST4102,95000,Credit Card,Crypto/FX,Desktop,Yes,850,8,4,4,Yes
+TXN1003,CUST9012,125000,Bank Transfer,Jewelry,Mobile,Yes,1200,5,2,8,Yes
+TXN1004,CUST3055,4200,POS Payment,Dining,POS,No,1.5,1,0,48,No
+TXN1005,CUST7721,48000,ATM Withdrawal,ATM Cash,ATM,No,42,3,1,18,No
+TXN1006,CUST1190,189000,Online Purchase,Electronics,Desktop,Yes,2400,6,3,2,Yes

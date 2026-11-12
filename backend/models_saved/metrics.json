@@ -1,0 +1,136 @@
+{
+  "status": "Model Successfully Trained on Dataset",
+  "trained_at": "2026-10-04 09:45:39 UTC",
+  "algorithm": "Random Forest Classifier (Ensemble Trees)",
+  "dataset_name": "Multi-Modal Financial Fraud Dataset (5,000 Transactions)",
+  "dataset_samples": 5000,
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "roc_auc": 0.965
+  },
+  "confusion_matrix": {
+    "true_legitimate": 857,
+    "false_fraudulent": 0,
+    "false_legitimate": 0,
+    "true_fraudulent": 143
+  },
+  "roc_curve": [
+    {
+      "fpr": 1.0,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.026,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.014,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.007,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.001,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.986
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.986
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.972
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.923
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.0
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "Account Age",
+      "importance": 0.2586
+    },
+    {
+      "feature": "Amount",
+      "importance": 0.1929
+    },
+    {
+      "feature": "Transactions Last 24 Hours",
+      "importance": 0.1344
+    },
+    {
+      "feature": "Distance From Usual Location",
+      "importance": 0.1127
+    },
+    {
+      "feature": "Transactions Last Hour",
+      "importance": 0.102
+    },
+    {
+      "feature": "Failed Login Attempts",
+      "importance": 0.089
+    },
+    {
+      "feature": "Vpn Detected",
+      "importance": 0.0385
+    },
+    {
+      "feature": "Two Factor Auth",
+      "importance": 0.0225
+    },
+    {
+      "feature": "Is New Device",
+      "importance": 0.0219
+    },
+    {
+      "feature": "Foreign Transaction",
+      "importance": 0.0081
+    },
+    {
+      "feature": "Otp Verified",
+      "importance": 0.0078
+    },
+    {
+      "feature": "Proxy Detected",
+      "importance": 0.0059
+    },
+    {
+      "feature": "Is High Risk Merchant",
+      "importance": 0.0033
+    },
+    {
+      "feature": "Is Wire Transfer",
+      "importance": 0.0013
+    },
+    {
+      "feature": "Is Upi",
+      "importance": 0.0005
+    },
+    {
+      "feature": "Is Credit Card",
+      "importance": 0.0004
+    },
+    {
+      "feature": "Previous Fraud Cases",
+      "importance": 0.0002
+    }
+  ]
+}
